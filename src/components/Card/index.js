@@ -21,14 +21,14 @@ export default function Card({ data, index, listIndex }) {
     hover(item, monitor) {
 
       const draggedListIndex=item.listIndex;
-      //const targetListIndex= listIndex;
+      const targetListIndex= listIndex;
 
 
 
       const draggedIndex = item.index;
       const targetIndex = index;
 
-      if (draggedIndex === targetIndex) {
+      if (draggedIndex === targetIndex && draggedListIndex===targetListIndex) {
         return;
       }
 
@@ -46,7 +46,10 @@ export default function Card({ data, index, listIndex }) {
         return;
       }
 
-      move(draggedListIndex,draggedIndex, targetIndex);
+      move(draggedListIndex,draggedIndex, targetIndex, targetListIndex);
+
+      item.index=targetIndex;
+      item.listIndex=targetListIndex;
 
 
     }
