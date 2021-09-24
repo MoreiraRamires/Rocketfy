@@ -7,6 +7,7 @@
 </h4>
 
 <p align="center">
+	
 ## 💻 Sobre o Projeto
 Neste projeto em React.JS foi criado um front-end chamado Rocketfy, uma clone do [Pipefy](https://www.pipefy.com/pt-br/) que é uma plataforma utilizada na gestão de trabalho.
 
